@@ -13,7 +13,8 @@ public class ThreeTeleportsExecuter {
 		xHome = TCReader.readint();
 		yHome = TCReader.readint();
 		teleports = TCReader.readStringArray();
-        
+    		System.out.println("==================================================");
 		System.out.println(new ThreeTeleports().shortestDistance(xMe, yMe, xHome, yHome, teleports));
+    		System.out.println("==================================================");
 	}
 }
