@@ -1,0 +1,8 @@
+0
+0
+20
+20
+{"1 1 18 20", "1000 1003 1000 1004", "1000 1005 1000 1006"}
+Expected:
+14
+The journey can be done in 40 jumps = 40 seconds, but there is a better solution: Make 2 jumps to get from (0,0) to (1,1), use the teleport to get to (18,20), and make 2 jumps to get to (20,20). This solution takes (2+10+2) = 14 seconds.

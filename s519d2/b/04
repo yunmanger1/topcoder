@@ -1,0 +1,15 @@
+3
+7
+10000
+30000
+{"3 10 5200 4900", "12212 8699 9999 30011", "12200 8701 5203 4845"}
+Expected:
+117
+Sometimes the best solution requires us to use more than one teleport. In this case, the optimal solution looks as follows:
+Using jumps, travel to (3,10).
+Use the first teleport.
+Using jumps, travel from (5200,4900) to (5203,4845).
+Use the third teleport.
+Using jumps, travel from (12200,8701) to (12212,8699).
+Use the second teleport.
+Using jumps, travel from (9999,30011) to (10000,30000).

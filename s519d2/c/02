@@ -1,0 +1,5 @@
+6
+8
+Expected:
+15
+This is the example from the problem statement. When flipping cards to create the number 8 from the number 7, Karel starts by flipping the card with 8 dots. At this moment, the number shown on the cards is 15.

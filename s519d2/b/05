@@ -1,0 +1,8 @@
+0
+0
+1000000000
+1000000000
+{"0 1 0 999999999", "1 1000000000 999999999 0", "1000000000 1 1000000000 999999999"}
+Expected:
+36
+Watch out for overflows. The correct return value will always fit into a int, but some other paths may be very long.

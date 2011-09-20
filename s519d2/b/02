@@ -1,0 +1,8 @@
+0
+0
+20
+20
+{"1000 1003 1000 1004", "18 20 1 1", "1000 1005 1000 1006"}
+Expected:
+14
+The teleports may be used in either direction, and in any order.

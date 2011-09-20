@@ -1,0 +1,8 @@
+3
+3
+4
+5
+{"1000 1001 1000 1002", "1000 1003 1000 1004", "1000 1005 1000 1006"}
+Expected:
+3
+The frog must make at least 3 leaps. For example, from (3,3) to (3,4), then to (3,5), and finally to (4,5). The teleports are all too far away to be useful.
