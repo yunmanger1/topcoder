@@ -1,0 +1,7 @@
+{"WBWBW",
+ "BBBBB",
+ "WBWBW",
+ "WBWBW"}
+Expected:
+3
+Paint row 1 (0-indexed), column 1 and column 3.
