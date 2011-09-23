@@ -1,0 +1,6 @@
+{5, 1, 6, 5, 8, 4, 7}
+{2, 1, 1, 1, 4, 3, 2}
+33
+Expected:
+5
+One of the optimal strategies is to cut grass blade 2, 0, 6, 5, 4 (0-indexed) at time 1, 2, 3, 4, 5 respectively.

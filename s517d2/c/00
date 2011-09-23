@@ -1,0 +1,9 @@
+{5, 8, 58}
+{2, 1, 1}
+16
+Expected:
+1
+At time 1:
+The heights of grass blades 0, 1, 2 become 7, 9, 59, respectively.
+Suppose that Ciel cuts grass blade 2. The height of grass blade 2 becomes zero.
+The sum of heights of all grass blades is 7 + 9 + 0 = 16, so she achieves her goal.

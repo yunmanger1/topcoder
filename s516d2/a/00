@@ -1,0 +1,4 @@
+"x?x?"
+Expected:
+"xoxo"
+Consider the entire message, which is a contiguous substring of the input message of length 4, which is even. It has two 'x's, so it follows that the other two '?' characters must be both 'o'.

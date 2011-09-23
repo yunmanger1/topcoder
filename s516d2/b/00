@@ -1,0 +1,5 @@
+{"110", "001"}
+{"101", "010"}
+Expected:
+2
+The two possible keys are "011" and "100".

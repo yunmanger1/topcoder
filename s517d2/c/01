@@ -1,0 +1,6 @@
+{5, 8}
+{2, 1}
+58
+Expected:
+0
+At time 0, the sum of heights of all grass blades is 13 and doesn't exceed H.

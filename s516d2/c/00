@@ -1,0 +1,9 @@
+{"acd", "bce"}
+Expected:
+"abcde"
+The only possible original strings of length 5 are:
+"abcde"
+"abced"
+"bacde"
+"baced"
+The lexicographically smallest of them is "abcde".

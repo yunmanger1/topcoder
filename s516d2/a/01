@@ -1,0 +1,4 @@
+"?xo?"
+Expected:
+"oxox"
+Consider the first two characters of message. Since it's a contiguous substring of the input message and has a length of 2, which is even, and since it already contains one 'x', the first '?' must be 'o'. Then, by considering the entire message as a contiguous substring of length 4, the last character must be 'x'.
