@@ -1,0 +1,7 @@
+{ "8,1,80 16,100,11", "12,10,100" }
+Expected:
+19.0
+The optimal strategy is as follows: At 08:00, Lecette should not sell the sword even if the first customer comes to the shop. At 12:00, the second customer surely comes. Then,
+If the first customer has come at 08:00, she should sell the sword to the second customer.
+Otherwise, she should not sell the sword to the second customer. She should sell it at 16:00 if possible.
+By this strategy, S will be 10 (80%) or 100 (11%) or 0 (9%).
