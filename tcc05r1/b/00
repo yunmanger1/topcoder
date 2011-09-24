@@ -1,0 +1,6 @@
+1
+1
+2
+Expected:
+0.1875
+When starting at a corner, only two of the initial jumps will cause the knight to stay on the board. From these new squares, six of the eight jumps will cause the knight to stay on the board. Hence the probability that the knight will stay on the board after two jumps is 1/4 * 6/8 = 0.1875.

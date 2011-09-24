@@ -1,0 +1,6 @@
+4
+4
+1
+Expected:
+1.0
+The knight can't fall off the board if only making a single jump from a square so close to the center.
