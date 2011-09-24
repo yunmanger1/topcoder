@@ -1,0 +1,7 @@
+2
+{1,1,1,2,2,2}
+3
+{1,1,1,1,1,1}
+Expected:
+0.25
+Note that dice can have several equal sides. Here, player B gets a sum of 3. Player A can beat that only if he gets a 2 on both his throws, giving him a 1/4 chance of winning.

@@ -1,0 +1,77 @@
+
+Problem Statement
+    
+The players A and B are playing a game with dice. Player A throws numDiceA of his dice, while player B throws numDiceB of his dice. Each of them adds the pips on his dice, and the player with the higher sum wins the game (if both get the same sum, it is a draw). The variables sidesA and sidesB have 6 elements each, and describe how many pips are on each side of the dice of player A and player B respectively. Each die has exactly 1/6 probability for each possible outcome.
+Given the number of dice numDiceA and numDiceB each player throws, and their configurations sidesA and sidesB, compute the probability that player A wins the game.
+Definition
+    
+Class:
+DiceThrows
+Method:
+winProbability
+Parameters:
+int, int[], int, int[]
+Returns:
+double
+Method signature:
+double winProbability(int numDiceA, int[] sidesA, int numDiceB, int[] sidesB)
+(be sure your method is public)
+    
+
+Notes
+-
+Your return value must have an absolute or relative error less than 1e-9.
+Constraints
+-
+numDiceA and numDiceB are between 1 and 200, inclusive.
+-
+sidesA and sidesB each contain exactly 6 elements.
+-
+Each element of sidesA and sidesB is between 1 and 100, inclusive.
+Examples
+0)
+
+    
+1
+{1,2,3,4,5,6}
+1
+{1,2,3,4,5,6}
+Returns: 0.41666666666666663
+This is the simple case, where each player throws a normal die once. Of the 36 possible outcomes, 6 are a tie (both players throw the same number), 15 a win for A and 15 a win for B. So player A wins 15/36 of the games.
+1)
+
+    
+200
+{1,3,8,18,45,100}
+200
+{1,4,10,21,53,100}
+Returns: 0.25240407058279035
+
+2)
+
+    
+2
+{1,1,1,2,2,2}
+3
+{1,1,1,1,1,1}
+Returns: 0.25
+Note that dice can have several equal sides. Here, player B gets a sum of 3. Player A can beat that only if he gets a 2 on both his throws, giving him a 1/4 chance of winning.
+3)
+
+    
+200
+{6,5,4,3,2,1}
+200
+{3,4,6,5,1,2}
+Returns: 0.49416239842107595
+Note that sidesA and sidesB need not be sorted.
+4)
+
+    
+100
+{1,1,1,1,1,2}
+199
+{1,1,1,1,1,1}
+Returns: 1.5306467074865068E-78
+There is a 6-100 probability of player A winning (all his throws are 2).
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.

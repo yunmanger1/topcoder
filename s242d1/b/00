@@ -1,0 +1,7 @@
+1
+{1,2,3,4,5,6}
+1
+{1,2,3,4,5,6}
+Expected:
+0.41666666666666663
+This is the simple case, where each player throws a normal die once. Of the 36 possible outcomes, 6 are a tie (both players throw the same number), 15 a win for A and 15 a win for B. So player A wins 15/36 of the games.
