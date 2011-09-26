@@ -1,0 +1,6 @@
+4
+5
+50
+Expected:
+0.4999999999999998
+When the probability is 50, clearly each player is the same, so each player has a 50% chance of winning.

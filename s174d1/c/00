@@ -1,0 +1,6 @@
+2
+1
+40
+Expected:
+0.352
+This is the 'best two out of three' game. There are exactly three possible ways for an upset to occur: 1) The worse player scores two consecutive points, with probability 0.4*0.4 = 0.16 2) The better player scores one point, and then the worse player scores two consecutive points, with probability 0.6*0.4*0.4 = 0.096 3) The worse player scores one point, the better player scores one point, and then finally the worse player a second point, with probability 0.4*0.6*0.4 = 0.096  Thus, the total probability is 0.16+0.096+0.096 = 0.352

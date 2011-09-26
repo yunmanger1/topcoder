@@ -1,0 +1,54 @@
+
+Problem Statement
+    
+The game of tennis has a rather unusual scoring system. It can be simplified to the following rule: "If a player has at least four points, and is at least two points ahead of his opponent, that player wins the game." For example, 4-1 and 6-4 are winning scores, whereas 3-0 and 5-4 are not.
+We can generalize this class of point systems by introducing two variables, pointsToWin and pointsToWinBy. The new rule is "If a player has at least pointsToWin points, and is at least pointsToWinBy points ahead of his opponent, that player wins the game." For example, the common practice of taking "best two out of three" falls into this class, where pointsToWin = 2 and pointsToWinBy = 1.
+You would like to know, given a particular point system and the skills of two players, the probability of an upset. An "upset" is defined as a game where a player of lesser skill beats a player of greater skill. Given an int skill, representing the percent likelihood that the worse player beats the better player on any particular turn, along with pointsToWin and pointsToWinBy, you should return a double between 0 and 1 indicating the odds of an upset.
+Definition
+    
+Class:
+PointSystem
+Method:
+oddsOfWinning
+Parameters:
+int, int, int
+Returns:
+double
+Method signature:
+double oddsOfWinning(int pointsToWin, int pointsToWinBy, int skill)
+(be sure your method is public)
+    
+
+Constraints
+-
+pointsToWin will be between 1 and 10, inclusive.
+-
+pointsToWinBy will be between 1 and 5, inclusive.
+-
+skill will be between 1 and 50, inclusive.
+Examples
+0)
+
+    
+2
+1
+40
+Returns: 0.352
+This is the 'best two out of three' game. There are exactly three possible ways for an upset to occur: 1) The worse player scores two consecutive points, with probability 0.4*0.4 = 0.16 2) The better player scores one point, and then the worse player scores two consecutive points, with probability 0.6*0.4*0.4 = 0.096 3) The worse player scores one point, the better player scores one point, and then finally the worse player a second point, with probability 0.4*0.6*0.4 = 0.096  Thus, the total probability is 0.16+0.096+0.096 = 0.352
+1)
+
+    
+4
+5
+50
+Returns: 0.4999999999999998
+When the probability is 50, clearly each player is the same, so each player has a 50% chance of winning.
+2)
+
+    
+3
+3
+25
+Returns: 0.035714285714285705
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.
