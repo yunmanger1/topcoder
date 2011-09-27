@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cnt=$(find . | grep -v tctools |grep -v Executer.java | grep .java | wc -l)
+
+find . | grep -v tctools |grep -v Executer.java | grep .java
+echo "Total: " $cnt
+
