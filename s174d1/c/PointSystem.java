@@ -19,40 +19,34 @@ public class PointSystem {
 			r/=i;
 		return r;
 	}
-	static double [] P = new double[2];
-	static int M,B;
-	static int [] st = new int[100];
-	static double R = 0;
-	public void writeout(int n, double p){
-		for (int i = 0; i < n; i++){
-			_f("%d",st[i]);
+	double [] P = new double[2];
+	int M,B;
+	double R = 0;
+	double [][] cr = new double[500][500];
+	double dive(int w, int l){
+		if (!(w < 500 && l < 500)){
+			return 0;
 		}
-		_f(" %.9f",p);
-		_("");
-	}
-	public void dive(double p, int d, int l){		
-		if (p < 1e-9){
-			return;
+		if (w >= M && w-l >= B){
+			return 1;
 		}
-		int w = d - l;
-		if (Math.abs(w-l) >= B && (w >= M || l >= M)){
-			if (w >= M){
-//				writeout(d,p);
-				R+=p;
-			}
-		}else{
-			for (int i = 0; i < 2; i++){
-				st[d] = i;
-				dive(p*P[i],d+1,l+i);
-			}
+		if (l >= M && l-w >= B){
+			return 0;
 		}
+		if (cr[w][l] != -1){
+			return cr[w][l];
+		}
+		cr[w][l] = P[0]*dive(w+1,l) + P[1]*dive(w,l+1);
+		return cr[w][l];
 	}
 	public double oddsOfWinning(int Mm, int Bb, int skill) {
 		P[0] = skill/100.0;
 		P[1] = 1 - P[0];
 		M = Mm;
 		B = Bb;
-		dive(1,0,0);
-		return R;
+		for (double [] a : cr){
+			Arrays.fill(a,-1);
+		}
+		return dive(0,0);
 	}
 }
